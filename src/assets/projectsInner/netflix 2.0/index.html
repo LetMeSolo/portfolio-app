@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Smokum&display=swap" rel="stylesheet">
+    <title>КиноПоиск 2.0</title>
+</head>
+<body>
+    <!-- ============= ЛОГОТИП ============= -->
+    <div class="logo">
+        <p><a id="refKinoPoisk" href=""><span class="yellow">Кино</span>Поиск <span class="yellow">v</span>2<span class="yellow">.</span>0</a></p>
+        <img src="img/icon.png" alt="">
+    </div>
+
+    <!-- ============= ПОИСКОВИК ============= -->
+    <h3>Search:</h3>
+    <div class="container__search">
+        <div class="item">
+            <span>Title:</span>
+            <input id="filmTitle" class="item__select" value="lion">
+        </div>
+        <div class="item" >
+            <span>Type:</span>
+            <select id="filmType" class="item__select">
+                <option value="movie" selected>Movie</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+          </select>
+        </div>
+        <button id="btn__search" class="btn__green">Search</button>
+    </div> <!-- container__search -->
+
+
+    <!-- ============= СПИСОК ФИЛЬМОВ ============= -->
+    <div class="film__container"></div>
+
+
+    <div class="paginator">
+        <button id="paginatorPrev" disabled >prev</button>
+        <button id="paginatorNext" disabled>next</button>
+    </div>
+
+    <div class="container_data"></div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

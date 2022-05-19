@@ -1,0 +1,21 @@
+<div class="container--main">
+
+  <div class="navigation">
+    <h3>Projects</h3>
+    <div class="navigation--item" [class.active]="isMogoProjectVisible" (click)="showMogoProject()">Mogo</div>
+    <div class="navigation--item" [class.active]="isActiveBoxProjectVisible" (click)="showActiveBoxProject()">Active Box</div>
+    <div class="navigation--item" [class.active]="isFilmsProjectVisible" (click)="showFilmsProject()">Films</div>
+    <div class="navigation--item" [class.active]="isBildCompanyProjectVisible" (click)="showBildCompanyProject()">Bild Comp</div>
+    <div class="navigation--item" [class.active]="isSnakeGameProjectVisible" (click)="showSnakeGameProject()">Snake Game</div>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="container--portfolio">
+    <app-mogo *ngIf="isMogoProjectVisible"></app-mogo>
+    <app-active-box *ngIf="isActiveBoxProjectVisible"></app-active-box>
+    <app-films *ngIf="isFilmsProjectVisible"></app-films>
+    <app-bild-company *ngIf="isBildCompanyProjectVisible"></app-bild-company>
+    <app-snake-game *ngIf="isSnakeGameProjectVisible"></app-snake-game>
+  </div>
+</div>
