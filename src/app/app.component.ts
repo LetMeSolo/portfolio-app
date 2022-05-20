@@ -7,4 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-app';
+
+  constructor() {
+  }
+
+  isMainPageVisible: boolean = true;
+  isAboutUsPageVisible: boolean = false;
+  isContactsPageVisible: boolean = false;
+
+  showMainPage() {
+    this.isMainPageVisible = true;
+    this.isAboutUsPageVisible = false;
+    this.isContactsPageVisible = false;
+  }
+  showAboutUsPage() {
+    this.isMainPageVisible = false;
+    this.isAboutUsPageVisible = true;
+    this.isContactsPageVisible = false;
+  }
+  showContactsPage() {
+    this.isMainPageVisible = false;
+    this.isAboutUsPageVisible = false;
+    this.isContactsPageVisible = true;
+  }
 }

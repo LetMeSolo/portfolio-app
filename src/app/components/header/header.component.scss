@@ -1,1 +1,62 @@
+.active {
+  background-color: #a6a6a6;
+  color: #fff;
+}
 
+.menu {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: calc(2rem + 1.2vmin);
+    font-weight: bold;
+    font-family: "dockerthree", sans-serif;
+    color: #376286;
+  }
+
+  .inner_menu {
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .line {
+      margin: 10px;
+      width: 1px;
+      height: 50%;
+      background-color: #d5d5d5;
+    }
+
+    .menu--item {
+      width: 200px;
+      height: 60%;
+
+      transition: .2s ease-in-out;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: "Montserrat-Light", sans-serif;
+      font-weight: 300;
+
+      &:hover {
+        background-color: gray;
+        color: #fff;
+      }
+    }
+  }
+}
