@@ -5,4 +5,19 @@
 
   font-weight: 200;
   font-size: 18px;
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Montserrat ExtraBold", sans-serif;
+  }
+
+  .container--text {
+    p {
+      &:first-child {
+        font-weight: 700;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+    }
+  }
 }
